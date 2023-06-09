@@ -1,0 +1,211 @@
+/*Libreria font family Exo*/
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+/*header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 5px solid red;
+}  
+.logo-left img,
+.logo-right img {
+    height: 40px;
+}
+  
+.logo-right {
+    display: flex;
+    align-items: center;
+}
+hr {
+    height: 10px;
+    background-color: red;
+  }
+.container{
+	width: 100%;
+	/*max-width: 700px;*/
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    align-content: center;
+    border-color: #8d8484;
+}
+.image-container{
+    width: 100%;
+    height:600px;
+    
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  .countdown {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -475px;
+  }
+  .countdown h3{
+    color: white;
+    font-family: 'Exo', sans-serif;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .countdown-row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 3px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid white;
+  }
+  
+  .countdown-row span {
+    font-size: 15px;    
+    color: #fff;
+    
+  }
+  
+  .countdown-row .label {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+  }
+ /* Estilos de los círculos de video */
+ .video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  
+  .video-circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .circle1{
+    background-color: red;
+  }
+  .video-circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .circle-text {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Exo';
+  }
+  
+  /* Estilos del reproductor de video */
+  #video-player {
+    text-align: center;
+  }
+  h3 .title{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    
+    margin-top: 90px;
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+  }
+  #video-iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+  }
+
+  /*footer*/
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-section p {
+    margin: 0;
+    color: white;
+  }
+  
+  .footer-section img {
+    max-width: 100px;
+  }
+  
+  .footer-section a {
+    margin-right: 1px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .footer-section a img {
+    width: 20px;
+    height: 25px;
+    
+  }
+
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .video-container {
+      flex-wrap: wrap;
+    }
+    .video-circle {
+      margin-bottom: 10px;
+    }
+    .fixed-header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+      }
+      .logo-left,
+      .logo-right {
+        margin-bottom: 10px;
+      }
+  }
+  

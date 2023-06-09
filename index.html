@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="logo-left">
+          <img src="../../img/logo-sochi.png" alt="Logo Izquierdo">
+        </div>
+        <div class="logo-right">
+          <img src="img/logo-claro-sports.png" alt="Logo Derecho">
+        </div>
+    </header>
+    <hr>    
+    <div class="container">        
+        <div class="image-container">            
+            <img src="img/background.jpg" alt="Logo Derecho">
+	    </div>
+    </div>     
+    <div class="countdown">
+        <h3>FALTAN</h3>
+        <div class="timer">
+        <div class="countdown-row">
+            <span id="days"></span>
+            <span class="label">DÍAS</span>
+        </div>
+        <div class="countdown-row">
+            <span id="hours"></span>
+            <span class="label">HRS</span>
+        </div>
+        <div class="countdown-row">
+            <span id="minutes"></span>
+            <span class="label">MIN</span>
+        </div>
+        <div class="countdown-row">
+            <span id="seconds"></span>
+            <span class="label">SEG</span>
+        </div>
+        </div>
+    </div>
+    <div id="video-player">
+        <iframe id="video-iframe" src="https://www.youtube.com/embed/watch?v=mAinJyxqrBY" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <h3 class="title" style="color: white;text-align: center;margin-top:80px;">CLARO SPORTS EN SOCHI 2014</h3>
+    <div class="video-container">
+      <div class="video-circle circle 1" onclick="changeVideo('mAinJyxqrBY')">
+        <span class="circle-text">Los Deportistas latinoamericanos que participaron en Sochi 2014.</span>
+      </div>
+      <div class="video-circle" onclick="changeVideo('gVUs4oFKJmY')"><img src="img/travel-meets-fashion.png">
+        <span class="circle-text">TRAVEL MEETS FASHION</span>
+      </div>
+      <div class="video-circle" onclick="changeVideo('aQLDxUY_wjs')"><img src="img/velocidad-riesgo.png">
+        <span class="circle-text">VELOCIDAD Y RIESGO</span>
+      </div>
+      <div class="video-circle" onclick="changeVideo('qBe17SnzI2s')"><img src="img/experiencia.png">
+        <span class="circle-text">EXPERIENCIA MULTIMEDIA</span>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section">
+          <p>Aviso de privacidad / Contacto</p>
+        </div>
+        <div class="footer-section">
+          <img src="img/logo-sochi-color.png" alt="Logo">
+        </div>
+        <div class="footer-section">            
+            <div class="footer-section">  
+                <a href="#"><img src="img/mobli-icon.png" alt=""></a>              
+                <a href="#"><img src="img/twitter.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/youtube.png" alt=""></a>
+              </div>
+        </div>
+      </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>
