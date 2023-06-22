@@ -2,9 +2,10 @@ version: '3'
 
 services:
   web:
+    command: tail -f /dev/null
     build: .
     image: codeigniter4:1.0
     ports:
-      - "80:80"
+      - "8080:8080"
     volumes:
-      - .:/app/var/www/html
+      - ./project-root:/var/www/html/project-root
