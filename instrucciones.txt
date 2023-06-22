@@ -1,0 +1,2 @@
+Comando para acceder a la base de datos desde dentro del contenedor
+$ docker compose exec db mysql -uroot -pHello123

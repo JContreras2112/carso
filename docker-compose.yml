@@ -1,0 +1,41 @@
+version: '2.4'
+
+services:
+  # Servicio del servidor web php codeigniter
+  web:
+    build: .
+    image: codeigniter4:1.0
+    ports:
+      - "80:80"
+    volumes:
+      - ./project-root:/var/www/html/project-root
+  # Servicio de base de datos MySQL
+  db:
+    image: mysql:8.0
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - mysql-data:/var/lib/mysql
+  # Servicio para mostrar phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      - db
+  #CLI de PHP que ejecutará comandos relacionados con CodeIgniter.
+  #cli:
+   # build: .
+    #volumes:
+     # - ./project-root:/var/www/html/project-root
+    #depends_on:
+     # - web
+volumes:
+  mysql-data:
+    driver: local
