@@ -8,7 +8,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends curl && \
     rm -rf /var/lib/apt/lists/*
 #Install PHP extensions
-RUN docker-php-ext-install zip intl
+RUN docker-php-ext-install zip intl mysqli
 #Configurar el DocumentRoot de Apache
 ENV APACHE_DOCUMENT_ROOT /var/www/html/project-root/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
