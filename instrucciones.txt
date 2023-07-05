@@ -1,8 +1,0 @@
-Comando para acceder a la base de datos desde dentro del contenedor
-$ docker compose exec db mysql -uroot -pHello123
-$$ docker compose exec -it web bash
-$/var/www/html/project-root
-$chmod 777 Pelicula.php  //dar permisos
-
-Insert database
-INSERT INTO `peliculas`(`id`, `titulo`, `descripcion`) VALUES (default,'Piratas del Caribe','Ciencia ficción');
